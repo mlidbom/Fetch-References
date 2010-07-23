@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<references repositoryPath="c:\Development\Manpower\SharedLib\" localPath="external-libs">
+  <reference name="SeleniumSpecFlow" version="trunk" />
+  <reference name="Blah" version="2.1" />
+</references>

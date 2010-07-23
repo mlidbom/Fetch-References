@@ -1,14 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace FetchReferences
+﻿namespace FetchReferences
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
+            if (Configured.LocalStorage.Exists)
+            {
+                Configured.LocalStorage.Delete(true);
+            }
+
+            foreach (var reference in Configured.References)
+            {
+                reference.CopyLocal();
+            }
         }
     }
 }
