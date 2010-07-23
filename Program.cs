@@ -4,10 +4,10 @@
     {
         private static void Main(string[] args)
         {
-            if (Configured.LocalStorage.Exists)
+            if (!Configured.LocalStorage.Exists)
             {
-                Configured.LocalStorage.Delete(true);
-            }
+                Configured.LocalStorage.Create();
+            }            
 
             foreach (var reference in Configured.References)
             {

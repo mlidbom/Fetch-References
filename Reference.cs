@@ -63,15 +63,16 @@ namespace FetchReferences
 
         public void CopyLocal()
         {
-            if(!Configured.LocalStorage.Exists)
-            {
-                Configured.LocalStorage.Create();
-            }
+            Console.WriteLine("Fetching: {0} Version: {1} \n\tSource: {2}\n\tTarget: {3}",
+                Name, Version, SourceDirectory.FullName, TargetDirectory.FullName);
+            
             if (TargetDirectory.Exists)
             {
+                Console.WriteLine("\tDeleting Target");
                 TargetDirectory.Delete(true);
-            }
-            Console.WriteLine("Copying: {0} to: {1}", SourceDirectory.FullName, TargetDirectory.FullName);
+            }            
+
+            Console.WriteLine("\tCopying");
             FileSystem.CopyDirectory(SourceDirectory.FullName, TargetDirectory.FullName);
         }
     }
