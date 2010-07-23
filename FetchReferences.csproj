@@ -54,6 +54,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="README.txt" />
     <Content Include="References.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -24,8 +24,9 @@ Example references.xml:
 Running with this configuration file will create this structure
 
 FetchReferences.exe
--SomeLibrary
--AnotherLibrary
+-external-libs
+--SomeLibrary
+--AnotherLibrary
 
 The contents of SomeLibrary will be the content of \\ReferencesServer\Repository\SomeLibrary\1.1
 The contents of AnotherLibrary will be the content of \\ReferencesServer\Repository\AnotherLibrary\0.9
