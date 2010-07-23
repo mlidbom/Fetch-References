@@ -11,7 +11,7 @@
 ----0.9
 
 
-requires the configuration file: references.xml to be in the binary's folder.
+requires the configuration file: references.xml to be in the same folder as FetchReferences.exe.
 
 Example references.xml:
 
