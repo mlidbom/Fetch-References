@@ -71,6 +71,7 @@ namespace FetchReferences
             {
                 TargetDirectory.Delete(true);
             }
+            Console.WriteLine("Copying: {0} to: {1}", SourceDirectory.FullName, TargetDirectory.FullName);
             FileSystem.CopyDirectory(SourceDirectory.FullName, TargetDirectory.FullName);
         }
     }
