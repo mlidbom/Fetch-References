@@ -4,11 +4,13 @@
 --Web
 ---SomeLibrary
 ----trunk
-----1.0
-----1.1
+----releases
+-----1.0
+-----1.1
 ---AnotherLibrary
 ----trunk
-----0.9
+----releases
+-----0.9
 
 
 requires the configuration file: references.xml to be in the same folder as FetchReferences.exe.

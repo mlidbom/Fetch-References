@@ -49,7 +49,9 @@ namespace FetchReferences
 
                 try
                 {
-                    return referenceRootDirectory.GetDirectories(Version).Single();
+                    return referenceRootDirectory
+                        .GetDirectories("releases").Single()
+                        .GetDirectories(Version).Single();
                 }
                 catch (Exception exception)
                 {
