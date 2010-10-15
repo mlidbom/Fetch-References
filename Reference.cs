@@ -50,8 +50,8 @@ namespace FetchReferences
                 try
                 {
                     return referenceRootDirectory
-                        .GetDirectories("releases").Single()
-                        .GetDirectories(Version).Single();
+                        .GetDirectories(Version, SearchOption.AllDirectories)
+                        .Single();
                 }
                 catch (Exception exception)
                 {
