@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using Microsoft.VisualBasic.FileIO;
 using SearchOption = System.IO.SearchOption;
+using Void.IO;
 
 #endregion
 
@@ -71,6 +72,7 @@ namespace FetchReferences
             if (TargetDirectory.Exists)
             {
                 Console.WriteLine("\tDeleting Target");
+                TargetDirectory.MakeWritable();
                 TargetDirectory.Delete(true);
             }            
 

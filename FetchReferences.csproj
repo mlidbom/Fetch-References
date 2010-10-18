@@ -42,6 +42,9 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="Void.Core">
+      <HintPath>Lib\Void\Void.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configured.cs" />
@@ -70,4 +73,5 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <Import Project="Lib\ILMergeMSBuildExtension\Ilmerge.CSharp.targets" />
 </Project>
